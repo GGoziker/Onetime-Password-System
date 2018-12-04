@@ -10,4 +10,4 @@ To create an event-based onetime password.
 
 ## Notes:
 * [SHA2](https://en.wikipedia.org/wiki/SHA-2) used to generate password
-* See Assignment_2.pdf for password generation details
+* See [Assignment_2.pdf](https://github.com/GGoziker/Onetime-Password-System/blob/master/Assignment_2.pdf) for password generation details
