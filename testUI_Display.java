@@ -9,7 +9,7 @@ public class testUI_Display {
 	   private JLabel headerLabel;
 	   private JLabel statusLabel;
 	   private JPanel controlPanel;
-	   //Stores a reference to the calling client, so it can test password input
+	   //The testUI.java object which this GUI represents
 	   private testUI testUI;
 	   
 	   

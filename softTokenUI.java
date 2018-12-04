@@ -10,21 +10,18 @@ import java.util.*;
 
 public class softTokenUI {
 	
-	//INSTANCE VARIABLES
-	
-	private String key = "808670FF00FF08812";	//Secret key used to generate passwords
-	private String mostRecentHash = key;				//Stores the most recently created hash, for use in the next password generation
+	/** Secret key used to generate passwords */
+	private String key = "808670FF00FF08812";
+	/** Stores most recently created hash */
+	private String mostRecentHash = key;
+	/** Socket connected to the associated testUI */
 	private Socket clientSocket;
 	
 	
 	
-	
-	//FUNCTIONS
-	
-	
-
-	/*
-	 * 
+	/**
+	 * Runs softTokenUI program, spawns the GUI
+	 * @param args
 	 */
 	public static void main(String[] args){
 		
@@ -35,6 +32,9 @@ public class softTokenUI {
 	
 	
 	
+	/**
+	 * Measure the probability of generating the same OTP over a period of time
+	 */
 	public static void collisionResistance(){
 		
 		//Run through # of OTP's to generate
@@ -59,8 +59,8 @@ public class softTokenUI {
 	
 	
 	
-	/*
-	 * Displays soft token UI to user
+	/**
+	 * Display GUI
 	 */
 	public void displaySoftTokenUI(){
 		softTokenUI_Display button = new softTokenUI_Display(this);
@@ -68,15 +68,14 @@ public class softTokenUI {
 	
 	
 	
-	/*
-	 * Returns a 6-digit one-time password
-	 * Also sends the new mostRecentHash to testUI
+	/**
+	 * Generate new password and display it to GUI
+	 * @return	New 6-digit onetime password
 	 */
 	public String generateOTP(){
 		String newHash = hash(this.mostRecentHash);
 		this.mostRecentHash = newHash;
-		
-		//Return new oneTimePass
+		// onetime password = first 6 digits of hash
 		String oneTimePass = this.mostRecentHash.substring(0, 6);
 		return oneTimePass;
 	}
