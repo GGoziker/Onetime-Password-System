@@ -15,9 +15,9 @@ To create an event-based onetime password.
 * [SHA2](https://en.wikipedia.org/wiki/SHA-2) used to generate password
 * See [Assignment_2.pdf](https://github.com/GGoziker/Onetime-Password-System/blob/master/Assignment_2.pdf) for password generation details
 
-#h1
-##h2
-###h3
-####h4
-#####h5
-######h6
+# h1
+## h2
+### h3
+#### h4
+##### h5
+###### h6
