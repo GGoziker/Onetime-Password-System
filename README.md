@@ -8,7 +8,7 @@ To create an event-based onetime password.
 * A test UI which will prompt the user to provide the OTP, show access granted message only if the right OTP is entered.
 ##### Deployment:
 * Run testUI.java first (server), then run softTokenUI.java (client)
-* Both components are designed to be run on the same device. Port /#s are hardcoded.
+* Both components are designed to be run on the same device. Port numbers are hardcoded.
 ##### Notes:
 * [SHA2](https://en.wikipedia.org/wiki/SHA-2) used to generate password
 * See [Assignment_2.pdf](https://github.com/GGoziker/Onetime-Password-System/blob/master/Assignment_2.pdf) for password generation details
